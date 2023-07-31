@@ -1,0 +1,9 @@
+[package]
+name = "Datascience-100knocks-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = { version = "0.31.1", features = ["describe", "lazy", "object", "dtype-categorical", "dtype-full", "mode", "temporal", "concat_str", "to_dummies", "log", "dtype-duration"]}
