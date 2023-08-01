@@ -1,4 +1,3 @@
-mod sec01;
 use polars::prelude::*;
 
 fn main() {
@@ -57,8 +56,6 @@ fn main() {
         .with_dtype_overwrite(Some(&schema.clone()))
         .finish()
         .unwrap();
-
-    sec01::test(df_product.clone());
 
 }
 
